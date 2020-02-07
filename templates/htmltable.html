@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <title>HTML Table</title>
+  </head>
+  <body>
+
+    <div>
+            <table >
+
+                    <nav >
+                            <span >HTML Table</span>
+                          </nav>
+
+                          <div >
+                                <div >
+                                  <div>
+                                        <thead>
+                                                <tr>
+                                                  <th>#</th>
+                                                  <th>#</th>
+                                                  <th>First name</th>
+                                                  <th>Last name</th>
+                                                  
+                                                </tr>
+                                        </thead>
+                                        <tbody>
+                                            {%for name in users%}
+                                                <tr>
+                                                  <th>{{name['entry_number']}}</th>
+                                                  <td>{{name['first_name']}}</td>
+                                                  <td>{{name['last_name']}}</td>
+                                                 
+                                                </tr>
+                                            {%endfor%}
+                                              
+                                        </tbody>
+                            
+                                </table>
+                                  </div>
+                          
+                    
+    </div>
+
+  
+  </body>
+</html>
